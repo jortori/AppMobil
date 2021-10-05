@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.SessionFragment">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USUARIO"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/usuarioconsultaragenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRES"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIARIO DE ACTIVIDADES"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:textColor="@color/blue"
+            android:layout_below="@id/usuarioconsultaragenda"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/clienteagendar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="CLIENTE: "
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/titulo" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtclienteagendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/blue"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:hint="Seleccione codigo"
+            android:textSize="@dimen/labels_size"
+            android:completionHint="Seleccione codigo"
+            android:completionThreshold="1"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@id/clienteagendar" />
+
+
+        <TextView
+            android:id="@+id/actividadagendar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="ACTIVIDAD A PROGRAMAR: "
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtclienteagendar" />
+
+
+        <Spinner
+            android:id="@+id/txtactividadagendar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/blue"
+            android:hint="LAT  SITIO"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtclienteagendar"
+            android:layout_toRightOf="@id/actividadagendar"/>
+
+
+        <Button
+            android:id="@+id/botonconsultaragenda"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="REGISTRAR ACTIVIDAD"
+            android:layout_marginTop="50dp"
+            android:background="@color/blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/txtactividadagendar" />
+
+    </RelativeLayout>
+</ScrollView>

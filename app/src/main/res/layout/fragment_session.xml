@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESION"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login"
+        />
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/user"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/login"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <EditText
+        android:id="@+id/txtuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/blue"
+        android:backgroundTint="@color/red"
+        android:layout_toRightOf="@id/user_image"
+        android:layout_marginTop="40dp"
+        android:hint="User"
+        android:layout_below="@id/login"
+        />
+
+    <ImageView
+        android:id="@+id/password_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/password"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/user_image"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:hint="Password"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/red"
+        android:layout_toRightOf="@id/password_image"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/txtuser"
+        />
+
+    <ImageButton
+        android:id="@+id/botonlogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="INGRESAR"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ingresar"
+        android:background="@color/blue"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/txtpassword"
+        />
+
+</RelativeLayout>

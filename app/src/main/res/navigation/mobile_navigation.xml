@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appmobil.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_visitas"
+            app:destination="@id/visitas" />
+        <action
+            android:id="@+id/action_nav_home_to_contactos"
+            app:destination="@id/contactos" />
+        <action
+            android:id="@+id/action_nav_home_to_sitios"
+            app:destination="@id/sitios" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/visitas"
+        android:name="com.example.appmobil.ui.visitas.Visitas"
+        android:label="visitas_fragment"
+        tools:layout="@layout/visitas_fragment" >
+        <argument
+            android:name="Usuario"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientes"
+        android:name="com.example.appmobil.ui.Customers.Clientes"
+        android:label="clientes_fragment"
+        tools:layout="@layout/clientes_fragment" />
+    <fragment
+        android:id="@+id/productos"
+        android:name="com.example.appmobil.ui.Products.Productos"
+        android:label="productos_fragment"
+        tools:layout="@layout/productos_fragment" />
+    <fragment
+        android:id="@+id/contactos"
+        android:name="com.example.appmobil.ui.contactos.Contactos"
+        android:label="contactos_fragment"
+        tools:layout="@layout/contactos_fragment" >
+        <argument
+            android:name="Usuario"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+    <fragment
+        android:id="@+id/sitios"
+        android:name="com.example.appmobil.ui.Sites.Sitios"
+        android:label="sitios_fragment"
+        tools:layout="@layout/sitios_fragment" >
+        <argument
+            android:name="Usuario"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.appmobil.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+</navigation>

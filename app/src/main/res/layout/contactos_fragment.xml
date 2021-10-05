@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.SessionFragment">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USUARIO"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/usuariocontacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRES"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRO DE CONTACTO"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:textColor="@color/blue"
+            android:layout_below="@id/usuariocontacto"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/clientecontacto"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="*CLIENTE: "
+            android:textColor="@color/red"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/titulo" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtclientepedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"
+            android:hint="Seleccione codigo"
+            android:textSize="@dimen/labels_size"
+            android:completionHint="Seleccione codigo"
+            android:completionThreshold="1"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@id/clientecontacto" />
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="PROFESION: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtclientepedido" />
+
+        <Spinner
+            android:id="@+id/txtitem1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="PROFESION DEL CONTACTO"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtclientepedido"
+            android:layout_toRightOf="@id/item1"/>
+
+        <TextView
+            android:id="@+id/primernombrecontacto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="*PRIMER NOMBRE: "
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/item1" />
+
+        <EditText
+            android:id="@+id/txtprimernombrecontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PRIMER NOMBRE"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/item1"
+            android:layout_toRightOf="@id/primernombrecontacto"/>
+
+        <TextView
+            android:id="@+id/segundonombrecontacto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="SEGUNDO NOMBRE: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/primernombrecontacto" />
+
+        <EditText
+            android:id="@+id/txtsegundonombrecontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SEGUNDO NOMBRE"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/primernombrecontacto"
+            android:layout_toRightOf="@id/segundonombrecontacto"/>
+
+        <TextView
+            android:id="@+id/primerapellidocontacto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="*PRIMER APELLIDO: "
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/segundonombrecontacto" />
+
+        <EditText
+            android:id="@+id/txtprimerapellidocontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:hint="PRIMER  APELLIDO"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/segundonombrecontacto"
+            android:layout_toRightOf="@id/primerapellidocontacto"/>
+
+        <TextView
+            android:id="@+id/segundoapellidocontacto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="SEGUNDO APELLIDO: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/primerapellidocontacto" />
+
+        <EditText
+            android:id="@+id/txtsegundoapellidocontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SEGUNDO APELLIDO"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/primerapellidocontacto"
+            android:layout_toRightOf="@id/segundoapellidocontacto"/>
+
+        <TextView
+            android:id="@+id/cargocontacto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="CARGO: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/segundoapellidocontacto" />
+
+        <EditText
+            android:id="@+id/txtcargocontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CARGO DEL CONTACTO"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/segundoapellidocontacto"
+            android:layout_toRightOf="@id/cargocontacto"/>
+
+        <TextView
+            android:id="@+id/telefonocontacto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="*TELEFONO: "
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/cargocontacto" />
+
+        <EditText
+            android:id="@+id/txttelefonocontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TELEFONO DE CONTACTO"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/cargocontacto"
+            android:layout_toRightOf="@id/telefonocontacto"/>
+
+        <TextView
+            android:id="@+id/celularcontacto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="*CELULAR: "
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/telefonocontacto" />
+
+
+        <EditText
+            android:id="@+id/txtcelularcontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CELULAR DEL CONTACTO"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/telefonocontacto"
+            android:layout_toRightOf="@id/celularcontacto"/>
+
+        <TextView
+            android:id="@+id/mailcontacto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="*CORREO ELECTRONICO: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/celularcontacto" />
+
+        <EditText
+            android:id="@+id/txtmailcontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CORREO DEL CONTACTO"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/celularcontacto"
+            android:layout_toRightOf="@id/mailcontacto"/>
+
+        <Button
+            android:id="@+id/botonregistrarcontacto"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="REGISTRAR NUEVO CONTACTO"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:background="@color/blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/mailcontacto" />
+
+
+    </RelativeLayout>
+</ScrollView>

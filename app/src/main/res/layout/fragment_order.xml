@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.SessionFragment">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USUARIO"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/usuariocontacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRES"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENVIAR ORDEN A MOSTRADOR"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:textColor="@color/blue"
+            android:layout_below="@id/usuariocontacto"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/clientecontacto"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="CLIENTE: "
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/titulo" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtclientepedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"
+            android:hint="Seleccione codigo"
+            android:textSize="@dimen/labels_size"
+            android:completionHint="Seleccione codigo"
+            android:completionThreshold="1"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@id/clientecontacto" />
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtclientepedido" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 1"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtclientepedido"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:inputType="number"
+            android:layout_below="@id/txtclientepedido"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem1" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 2"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem1"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem1"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem2" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 3"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem2"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem3"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem3" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 4"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem3"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem2"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem4" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem5"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 5"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem4"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem4"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem5" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem6"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 6"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem5"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem5"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem6" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem7"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 7"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem6"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem6"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem7" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem8"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 8"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem7"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem7"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem8" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem9"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 9"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem8"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem8"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <TextView
+            android:id="@+id/item10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem9" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtitem10"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="ITEM 10"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem9"
+            android:layout_toRightOf="@id/item1"/>
+
+        <EditText
+            android:id="@+id/txcantidad10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CANT"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtitem9"
+            android:inputType="number"
+            android:layout_toRightOf="@id/txtitem1"/>
+
+        <Button
+            android:id="@+id/botonregistrarpedido"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="ENVIAR PEDIDO"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:background="@color/blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/txtitem10" />
+
+        <Button
+            android:id="@+id/botonregresarmenupedido"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="REGRESAR AL MENU"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/botonregistrarpedido" />
+    </RelativeLayout>
+</ScrollView>

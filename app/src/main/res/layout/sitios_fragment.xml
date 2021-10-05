@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.SessionFragment">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USUARIO"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/usuariositio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRES"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRO DE SITIO"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:textColor="@color/blue"
+            android:layout_below="@id/usuariositio"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/clientesitio"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="CLIENTE: "
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/titulo" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtclientesitio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"
+            android:hint="Seleccione codigo"
+            android:completionHint="Seleccione codigo"
+            android:completionThreshold="1"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@id/clientesitio" />
+
+        <TextView
+            android:id="@+id/codigositio"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="COD. SITIO: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/clientesitio" />
+
+        <Spinner
+            android:id="@+id/txtcodigositio"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="PROFESION DEL CONTACTO"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/clientesitio"
+            android:layout_toRightOf="@id/codigositio"/>
+
+        <TextView
+            android:id="@+id/nombresitio"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE SITIO: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/codigositio" />
+
+        <EditText
+            android:id="@+id/txtnombresitio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOMBRE SITIO"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/codigositio"
+            android:layout_toRightOf="@id/nombresitio"/>
+
+        <TextView
+            android:id="@+id/direccionsitio"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="DIRECCION SITIO: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/nombresitio" />
+
+        <TextView
+            android:id="@+id/txtdireccionsitio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SEGUNDO NOMBRE"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/nombresitio"
+            android:layout_toRightOf="@id/direccionsitio"/>
+
+        <TextView
+            android:id="@+id/latitudsitio"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="LATITUD SITIO: "
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/direccionsitio" />
+
+        <TextView
+            android:id="@+id/txtlatitudsitio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:hint="LAT  SITIO"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/direccionsitio"
+            android:layout_toRightOf="@id/latitudsitio"/>
+
+        <TextView
+            android:id="@+id/longitudsitio"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="LONGITUD SITIO: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/latitudsitio" />
+
+        <TextView
+            android:id="@+id/txtlongitudsitio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LONGITUD SITIO"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/latitudsitio"
+            android:layout_toRightOf="@id/longitudsitio"/>
+
+        <Button
+            android:id="@+id/botonregistrarsitio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="REGISTRAR NUEVO SITIO"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/longitudsitio" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/icono"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/icono"/>
+
+    <TextView
+        android:id="@+id/user_tracking_template"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icono"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Usuario:"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:id="@+id/latitud_tracking_template"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_tracking_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Lat.:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtlatitud_tracking_template"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/latitud_tracking_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Lat.:"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:id="@+id/longitud_tracking_template"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_tracking_template"
+        android:layout_below="@id/latitud_tracking_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Lon.:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtlongitud_tracking_template"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/latitud_tracking_template"
+        android:layout_below="@id/txtlatitud_tracking_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Lon.:"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:id="@+id/direccion_tracking_template"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_tracking_template"
+        android:layout_below="@id/longitud_tracking_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Direccion.:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtdireccion_tracking_template"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/latitud_tracking_template"
+        android:layout_below="@id/txtlongitud_tracking_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Dir.:"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:id="@+id/fecha_tracking_template"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_tracking_template"
+        android:layout_below="@id/direccion_tracking_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Fecha.:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtfecha_tracking_template"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/latitud_tracking_template"
+        android:layout_below="@id/txtdireccion_tracking_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Fecha:"/>
+
+</RelativeLayout>

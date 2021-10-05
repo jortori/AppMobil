@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/icono"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/icono"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icono"
+        android:id="@+id/codigo_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Codigo:"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icono"
+        android:layout_below="@id/codigo_template"
+        android:id="@+id/nombre_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Descripción:"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icono"
+        android:layout_below="@id/nombre_template"
+        android:id="@+id/user_template"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Usuario:"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nombre_template"
+        android:id="@+id/telefono"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Lat.:"/>
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/credito"
+        android:layout_toRightOf="@id/nombre_template"
+        android:layout_below="@id/telefono"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Long: "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/credito"
+        android:id="@+id/txtlatitudtemplate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Lat:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlongitudtemplate"
+        android:layout_toRightOf="@id/credito"
+        android:layout_below="@id/txtlatitudtemplate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Long:"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/direccion_tracking"
+        android:layout_toRightOf="@id/nombre_template"
+        android:layout_below="@id/credito"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Dir: "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdirecciontemplate"
+        android:layout_toRightOf="@id/credito"
+        android:layout_below="@id/txtlongitudtemplate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Direccion:"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha_tracking"
+        android:layout_toRightOf="@id/nombre_template"
+        android:layout_below="@id/direccion_tracking"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Fecha: "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtfechatemplate"
+        android:layout_toRightOf="@id/credito"
+        android:layout_below="@id/txtdirecciontemplate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Fecha"/>
+
+</RelativeLayout>

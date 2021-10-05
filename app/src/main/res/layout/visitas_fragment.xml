@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.SessionFragment">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREAR REPORTE DE VISITA"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:textColor="@color/blue"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/user_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="USUARIO: "
+            android:layout_marginTop="25dp"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/titulo" />
+
+        <TextView
+            android:id="@+id/txtuser_visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USUARIO"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@id/user_tracking" />
+
+        <TextView
+            android:id="@+id/latitud_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="LATITUD: "
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/blue"
+            android:layout_below="@id/user_tracking" />
+        <TextView
+            android:id="@+id/txtlatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LATITUD"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/user_tracking"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@id/latitud_tracking"/>
+
+        <TextView
+            android:id="@+id/longitud_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="LONGITUD: "
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/blue"
+            android:layout_below="@id/latitud_tracking" />
+
+        <TextView
+            android:id="@+id/txtlongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LONGITUD"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/latitud_tracking"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@id/longitud_tracking"/>
+
+        <TextView
+            android:id="@+id/direccion_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="DIRECCION: "
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/blue"
+            android:layout_below="@id/longitud_tracking" />
+
+        <TextView
+            android:id="@+id/txtdireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRECCION"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/longitud_tracking"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@id/direccion_tracking"/>
+
+        <TextView
+            android:id="@+id/fecha_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="FECHA: "
+            android:layout_marginTop="35dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/direccion_tracking" />
+
+        <TextView
+            android:id="@+id/txtfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FECHA"
+            android:layout_marginTop="35dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/direccion_tracking"
+            android:layout_toRightOf="@id/fecha_tracking"/>
+
+        <TextView
+            android:id="@+id/codigo_cliente"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="CODIGO: "
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/fecha_tracking" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtcustomer_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"
+            android:hint="Seleccione codigo"
+            android:completionHint="Seleccione codigo"
+            android:completionThreshold="1"
+            android:layout_below="@id/txtfecha"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/codigo_cliente"/>
+
+
+        <TextView
+            android:id="@+id/contacto_cliente"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="CONTACTO: "
+            android:layout_marginTop="35dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/codigo_cliente" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtcontacto_spinner"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"
+            android:hint="Seleccione contacto"
+            android:completionHint="Seleccione codigo"
+            android:completionThreshold="1"
+            android:layout_below="@id/txtcustomer_spinner"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/codigo_cliente"/>
+
+
+        <ImageButton
+            android:id="@+id/crearcontacto"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/contactos"
+            android:background="@color/blue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtcontacto_spinner"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/txtcustomer_spinner" />
+
+
+        <TextView
+            android:id="@+id/proposito"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="PROPOSITO VISITA: "
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtcontacto_spinner" />
+
+        <Spinner
+            android:id="@+id/txtproposito_spinner"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"
+            android:hint="Proposito"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/txtcontacto_spinner"
+            android:layout_toRightOf="@id/proposito"/>
+
+        <TextView
+            android:id="@+id/sitio"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="SITIO: "
+            android:layout_marginTop="35dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtproposito_spinner" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtsitio"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"
+            android:hint="Seleccione sitio"
+            android:completionHint="Seleccione codigo"
+            android:completionThreshold="1"
+            android:layout_below="@id/txtproposito_spinner"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/sitio"/>
+
+        <ImageButton
+            android:id="@+id/crearsitio"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/sitios"
+            android:background="@color/blue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toRightOf="@+id/txtsitio"
+            android:layout_below="@id/crearcontacto" />
+
+        <TextView
+            android:id="@+id/comentario"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="COMENTARIO: "
+            android:layout_marginTop="35dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtsitio" />
+
+        <EditText
+            android:id="@+id/txtcomentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"
+            android:hint="Comentario"
+            android:layout_below="@id/txtsitio"
+            android:layout_alignBaseline="@id/comentario"
+            android:layout_toRightOf="@id/comentario"/>
+
+        <Button
+            android:id="@+id/ReportVisits"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="REPORTAR VISITA"
+            android:layout_marginTop="45dp"
+            android:background="@color/blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/txtcomentario" />
+
+    </RelativeLayout>
+</ScrollView>

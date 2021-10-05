@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/icono"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/icono"/>
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icono"
+        android:id="@+id/numparte"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Número de parte:"/>
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icono"
+        android:layout_below="@id/numparte"
+        android:id="@+id/desc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Descripción:"/>
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/desc"
+        android:layout_below="@id/numparte"
+        android:id="@+id/pres"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Presentacion:"/>
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pres"
+        android:id="@+id/onhand"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Disp:"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/onorder"
+        android:layout_toRightOf="@id/pres"
+        android:layout_below="@id/onhand"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Order:"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/onhand"
+        android:id="@+id/txtonhand"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Disp:"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtonorder"
+        android:layout_toRightOf="@id/onorder"
+        android:layout_below="@id/onhand"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Order:"/>
+
+</RelativeLayout>

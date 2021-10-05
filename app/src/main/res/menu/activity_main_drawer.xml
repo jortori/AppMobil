@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/visitas"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Reportar visitas" />
+        <item
+            android:id="@+id/reportevisitas"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ver visitas reportadas" />
+        <item
+            android:id="@+id/clientes"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Consultar clientes" />
+        <item
+            android:id="@+id/productos"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Consultar productos" />
+        <item
+            android:id="@+id/contactos"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Reportar contactos" />
+        <item
+            android:id="@+id/sitios"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Reportar sitio" />
+        <item
+            android:id="@+id/pedido"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Enviar cotizacion" />
+        <item
+            android:id="@+id/actividad"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Registro de actividad diaria" />
+    </group>
+</menu>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.SessionFragment">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VISITA GUARDADA"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:textColor="@color/blue"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/user_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="USUARIO: "
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/titulo" />
+
+        <TextView
+            android:id="@+id/txtuser_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USUARIO"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@id/user_tracking" />
+
+        <TextView
+            android:id="@+id/latitud_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="LATITUD: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/user_tracking" />
+        <TextView
+            android:id="@+id/txtlatitudreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LATITUD"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/user_tracking"
+            android:layout_toRightOf="@id/latitud_tracking"/>
+
+        <TextView
+            android:id="@+id/longitud_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="LONGITUD: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/latitud_tracking" />
+
+        <TextView
+            android:id="@+id/txtlongitudreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LONGITUD"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/latitud_tracking"
+            android:layout_toRightOf="@id/longitud_tracking"/>
+
+        <TextView
+            android:id="@+id/direccion_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="DIRECCION: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/longitud_tracking" />
+
+        <TextView
+            android:id="@+id/txtdireccionreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRECCION"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/longitud_tracking"
+            android:layout_toRightOf="@id/direccion_tracking"/>
+
+        <TextView
+            android:id="@+id/fecha_tracking"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="FECHA: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtdireccionreport" />
+
+        <TextView
+            android:id="@+id/txtfechareport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FECHA"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtdireccionreport"
+            android:layout_toRightOf="@id/fecha_tracking"/>
+
+        <TextView
+            android:id="@+id/nombre_visit"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/fecha_tracking" />
+
+        <TextView
+            android:id="@+id/txtnombrereport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE CLIENTE"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/fecha_tracking"
+            android:layout_toRightOf="@id/fecha_tracking"/>
+
+        <TextView
+            android:id="@+id/contacto_visit"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="CONTACTO: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/nombre_visit" />
+
+        <TextView
+            android:id="@+id/txtcontacto_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE CONTACTO"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtnombrereport"
+            android:layout_toRightOf="@id/fecha_tracking"/>
+
+        <TextView
+            android:id="@+id/proposito_visit"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="PROPOSITO: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/contacto_visit" />
+
+        <TextView
+            android:id="@+id/txtpropositoreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROPOSITO DE LA VISITA"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtcontacto_report"
+            android:layout_toRightOf="@id/fecha_tracking"/>
+
+        <TextView
+            android:id="@+id/comentario"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="COMENTARIO: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/proposito_visit" />
+
+        <TextView
+            android:id="@+id/txtcomentarioreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMENTARIO DE LA VISITA"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtpropositoreport"
+            android:layout_toRightOf="@id/comentario"/>
+
+        <TextView
+            android:id="@+id/sitio"
+            android:layout_width="@dimen/Visit_lable_size"
+            android:layout_height="wrap_content"
+            android:text="SITIO: "
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/comentario" />
+
+        <TextView
+            android:id="@+id/txtsitiovisitreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SITIO DEL CLIENTE"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/txtcomentarioreport"
+            android:layout_toRightOf="@id/comentario"/>
+
+
+        <Button
+            android:id="@+id/backvisitreport"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="REPORTAR OTRA VISITA"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/txtsitiovisitreport" />
+
+        <Button
+            android:id="@+id/botoncorreoreport"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="ENVIAR REPORTE POR CORREO"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/backvisitreport" />
+
+        <TextView
+            android:id="@+id/mensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   DIRECCIONES ADICIONALES PARA REPORTE:  "
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/labels_size"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/botoncorreoreport"
+            />
+
+        <EditText
+            android:id="@+id/txtmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/mensaje"
+            android:inputType="textEmailAddress"
+            android:hint="correo 1"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red" />
+
+        <EditText
+            android:id="@+id/txtmail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txtmail"
+            android:inputType="textEmailAddress"
+            android:hint="correo 2"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"  />
+
+        <EditText
+            android:id="@+id/txtmail3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txtmail2"
+            android:inputType="textEmailAddress"
+            android:hint="correo 3"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/red"  />
+
+    </RelativeLayout>
+</ScrollView>
